@@ -1,0 +1,27 @@
+$background: #777;
+$text: #f7f7f7;
+$header-background: #222;
+
+.hidden {
+	display: none;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+body {
+	background: $background;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+@mixin default-box {
+	min-height: 75vh;
+	padding: 1%;
+	width: 45%;
+}

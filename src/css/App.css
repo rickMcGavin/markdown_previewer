@@ -1,0 +1,55 @@
+.hidden {
+  display: none; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  background: #777; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+.App-header {
+  background-color: #222;
+  color: #f7f7f7;
+  display: flex;
+  height: 75px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center; }
+
+.row {
+  display: flex;
+  background-color: #777;
+  min-height: 100vh;
+  padding: 1%;
+  width: 100%; }
+
+textarea {
+  min-height: 75vh;
+  padding: 1%;
+  width: 45%;
+  background: #f7f7f7;
+  font-size: 16px; }
+
+.view {
+  min-height: 75vh;
+  padding: 1%;
+  width: 45%;
+  color: #f7f7f7;
+  margin-left: 1%; }
+
+@media only screen and (max-width: 767px) {
+  .row {
+    flex-direction: column; }
+
+  textarea {
+    width: 100%; }
+
+  .view {
+    width: 100%; } }
+
+/*# sourceMappingURL=App.css.map */
