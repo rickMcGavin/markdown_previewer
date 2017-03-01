@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './css/App.css';
 let marked = require('marked');
 
+
 let App = React.createClass ({
 
   getInitialState: function() {
@@ -15,12 +16,12 @@ let App = React.createClass ({
   },
 
   toggleEditor: function() {
-    if (this.state.showHideEditor === 'show') {
+    if (this.state.showHideEditor === 'show') {   
       this.setState({showHideEditor: 'hidden'});
       this.refs.view.style.width = '95vw';
     } else {
       this.setState({showHideEditor: 'show'});
-      this.refs.view.style.width = '45vw';
+      this.refs.view.style.width = this.refs.text.style.width;
     }
   },
 
