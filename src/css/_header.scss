@@ -5,6 +5,21 @@
   height: 75px;
   padding: 20px;
   align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 }
 
+.App-header > button {
+	background: $header-background;
+	border: 1px solid $text;
+	color: $text;
+	cursor: pointer;
+	font-weight: bold;
+	height: 40px;
+	outline: none;
+	width: 75px;
+}
+
+.App-header > button:active {
+	background: $text;
+	color: $header-background;
+}

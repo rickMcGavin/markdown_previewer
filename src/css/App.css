@@ -1,6 +1,9 @@
 .hidden {
   display: none; }
 
+.show {
+  display: block; }
+
 html {
   box-sizing: border-box; }
 
@@ -19,12 +22,25 @@ body {
   height: 75px;
   padding: 20px;
   align-items: center;
-  justify-content: center; }
+  justify-content: space-around; }
+
+.App-header > button {
+  background: #222;
+  border: 1px solid #f7f7f7;
+  color: #f7f7f7;
+  cursor: pointer;
+  font-weight: bold;
+  height: 40px;
+  outline: none;
+  width: 75px; }
+
+.App-header > button:active {
+  background: #f7f7f7;
+  color: #222; }
 
 .row {
   display: flex;
   background-color: #777;
-  min-height: 100vh;
   padding: 1%;
   width: 100%; }
 
@@ -33,7 +49,8 @@ textarea {
   padding: 1%;
   width: 45%;
   background: #f7f7f7;
-  font-size: 16px; }
+  font-size: 16px;
+  transition: 0.5s ease; }
 
 .view {
   min-height: 75vh;
